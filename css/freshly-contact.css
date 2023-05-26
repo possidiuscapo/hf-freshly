@@ -1,0 +1,106 @@
+.contact p {
+    text-align: center;
+}
+
+.contact p:nth-last-child(2) {
+    font-style: italic;
+}
+
+.span {
+    margin-right: 0.6rem;
+    padding-bottom: 0;
+    border-bottom: var(--color) 2px dotted;
+    color: var(--color);
+}
+
+form {
+    padding: 2rem;
+    width: 60%;
+    margin: 0 auto;
+    background-color: var(--color-principale);
+}
+
+label {
+    margin-bottom: 0.6rem;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: transparent;
+}
+
+legend {
+    font-family: Merienda;
+}
+
+fieldset input,
+fieldset textarea {
+    margin-inline: auto;
+    margin-bottom: 1.5rem;
+    width: 95%;
+    padding: 0.5rem;
+    border: var(--color-second) 1px solid;
+    border-radius: 4px;
+}
+
+.input {
+    text-align: center;
+}
+
+input[type="submit"] {
+    padding-block: 0.4rem;
+    width: 40%;
+    border-radius: 4px;
+    border: var(--color-second) 1px solid;
+    font-family: Athiti;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--color-second);
+    color: var(--color-principale);
+    transition: 1s;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.05);
+}
+
+/***********
+Responsive
+************/
+
+@media screen and (min-width:780px) and (max-width: 980px) {
+    .flex-contact {
+        display: flex;
+    }
+
+    .reservation {
+        width: 50%;
+    }
+
+    .details {
+        width: 50%;
+    }
+}
+
+
+
+@media screen and (min-width: 981px) {
+    .flex-contact {
+        display: flex;
+    }
+
+    .reservation {
+        width: 50%;
+    }
+
+    .details {
+        width: 50%;
+    }
+
+    .details input {
+        padding-block: 0.6rem;
+    }
+}

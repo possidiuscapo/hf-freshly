@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./instructions/ressources/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/freshly.css">
+    <script src="https://kit.fontawesome.com/a62ea980a6.js" crossorigin="anonymous"></script>
+    <script src="./ressources/jquery-3.5.1.js"></script>
+    <script src="./instructions/slick/slick.js"></script>
+    <script src="./js/script.js"></script>
+    <title>Freshly-Restaurant</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href=""><img src="./instructions/ressources/images/logo.png" alt="Logo de Freshly-Restaurant"></a>
+            <h1>Freshly Restaurant</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./home.html">home</a></li>
+                <li><a href="./about.html">about</a></li>
+                <li><a href="./menus.html">menus</a></li>
+                <li><a href="./contact.html" class="active">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="bienvenue contact">
+            <h2>Contact us</h2>
+            <p>If your want to make a reservation, please complete this form.</p>
+            <p>Fields with <span class="span">*</span> are required.</p>
+            <form action="" method="post">
+                <div class="flex-contact">
+                    <fieldset class="reservation">
+                        <legend>Reservation</legend>
+                        <label for="date"><span class="span">*</span>Date</label>
+                        <input type="date" name="" id="date" required>
+                        <label for="time"><span class="span">*</span>Time</label>
+                        <input type="time" name="" id="time" required>
+                        <label for="number"><span class="span">*</span>Number of guests</label>
+                        <input type="number" name="" id="number" required>
+                    </fieldset>
+                    <fieldset class="details">
+                        <legend>Details</legend>
+                        <label for="name"><span class="span">*</span>Name</label>
+                        <input type="text" name="name" id="name" required>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                        <label for="telephone"><span class="span">*</span>Telephone</label>
+                        <input type="tel" name="telephone" id="telephone" required>
+                    </fieldset>
+                </div>
+                <fieldset class="request">
+                    <legend>Further request</legend>
+                    <textarea name="text" id="text" cols="30" rows="10"></textarea>
+                </fieldset>
+                <div class="input"><input type="submit" value="reserve"></div>
+            </form>
+        </section>
+        <section class="Our location">
+            <h3>Our location</h3>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="pieds-page">
+            <div class="foot">
+                <section class="opening">
+                    <h4>Opening hours</h4>
+                    <p>Monday: Closed</p>
+                    <p>Tue-Wed : 9am - 10pm</p>
+                    <p>Thu-Fri : 9am - 10pm</p>
+                    <p>Sat-Sun : 5pm - 10pm</p>
+                </section>
+                <section>
+                    <h4>Contact</h4>
+                    <address>
+                        13 Christopher Street<br>
+                        New York, <br>
+                        NY 10014-3543<br>
+                        <a href="tel:+0120008009999">+01 2000 800 9999</a>
+                    </address>
+                </section>
+                <section>
+                    <h4>Social networks</h4>
+                    <div class="font-icon">
+                        <span class="fab fa-facebook-f"></span>
+                        <span class="fab fa-instagram"></span>
+                        <span class="fab fa-pinterest-p"></span>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="foote">
+                <a href="#"><img src="img/logo-3wa.png" alt="Propriété de la 3W Academy"></a>
+                <p>Cet exercice de <a href="#">3W Academy</a> est mis à disposition <a href="#">pour l'usage personnel
+                        des
+                        étudiants. Pas de Rediffusion - Attribution - Pas d'Utilisation Commerciale - Pas de
+                        Modification -
+                        International</a>.</p>
+                <p>Les autorisations au-delà du champ de cette licence peuvent être obtenues auprès de <a
+                        href="contact@3wa.fr">contact@3wa.fr</a>. Les maquettes ont été réalisées par <a
+                        href="mailto:catherinedenos@gmail.com">Catherine Denos</a>.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

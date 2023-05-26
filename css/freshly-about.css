@@ -1,0 +1,57 @@
+video {
+    margin: 3rem 10%;
+    width: 80%;
+    text-align: center;
+}
+
+.menu-special figure {
+    margin-inline: 0;
+    text-align: center;
+}
+
+.grid {
+    padding: 1rem;
+    padding-block: 1rem;
+    background-color: var(--color-principale);
+}
+
+.grid figure {
+    width: 50%;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    transition: 1s;
+}
+
+.grid figure>img {
+    width: 100%;
+}
+
+.grid figure:hover {
+    transform: scale(1.02);
+}
+
+/****************
+Responsive
+*****************/
+
+@media screen and (min-width:780px) and (max-width: 980px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        gap: 2rem;
+    }
+}
+
+
+@media screen and (min-width: 981px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        gap: 2rem;
+    }
+
+    .grid figure {
+        width: 100%;
+    }
+}

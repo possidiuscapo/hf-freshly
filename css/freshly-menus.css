@@ -1,0 +1,143 @@
+.detail-menus,
+.desert,
+.cocktails {
+    text-align: center;
+}
+
+.detail-menus h2 {
+    font-family: Merienda;
+    font-weight: 600;
+}
+
+.button {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.button button {
+    padding: 0.5rem 1rem;
+    margin-inline: 0.6rem;
+    border: none;
+    font-family: Athiti;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    background-color: var(--color-principale);
+    color: var(--color-second);
+}
+
+button:hover,
+button:focus {
+    background-color: var(--color);
+    color: var(--color-principale);
+}
+
+.grid-menus {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    background-color: var(--color-principale);
+    gap: 1rem;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.grid-clms {
+    grid-column: 1 / 3;
+    justify-self: center;
+    width: 50%;
+}
+
+.bg-image {
+    position: relative;
+    box-shadow: 0px 1px 3px rgba(76, 67, 67, .9);
+}
+
+figure {
+    margin: 0.2rem;
+    width: 100%;
+    height: 100%;
+}
+
+figure>img {
+    width: 100%;
+    height: 100%;
+}
+
+.hover {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(76, 67, 67, .9);
+    transition: 2s ease;
+    opacity: 0;
+    /* transform: translate(50%, 50%); */
+}
+
+.cadre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 90%;
+    padding: 1rem;
+    margin: 1.5rem;
+    border: 5px var(--clr-text) solid;
+    font-family: Merienda;
+    font-size: 1rem;
+    color: white;
+}
+
+.bg-image:hover .hover {
+    opacity: 1;
+}
+
+@media screen and (min-width:780px) and (max-width: 980px) {
+    .grid-menus {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;
+        row-gap: 3rem;
+    }
+
+    .grid-clms {
+        grid-column: 3 / 4;
+        justify-self: auto;
+        width: 100%;
+    }
+
+    .cadre {
+        padding: 2.5rem;
+        font-size: 1.5rem;
+    }
+}
+
+
+@media screen and (min-width: 981px) {
+    .grid-menus {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;
+        row-gap: 3rem;
+    }
+
+    .grid-clms {
+        grid-column: 3 / 4;
+        justify-self: auto;
+        width: 100%;
+    }
+
+    .bg-image:hover {
+        transform: scale(1.01);
+    }
+
+    .cadre {
+        padding: 3rem 2.5rem;
+        font-size: 1.5rem;
+    }
+}

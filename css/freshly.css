@@ -1,0 +1,492 @@
+@import url(./fonts-face.css);
+@import url(./freshly-about.css);
+@import url(./freshly-contact.css);
+/* @import url(./freshly-menus.css); */
+@import url(../instructions/slick/slick.css);
+@import url(../instructions/slick/slick-theme.css);
+
+:root {
+    --color-principale: #ebe3db;
+    --color-second: #4c4343;
+    --color: #950000;
+    --color-footer: #333;
+    --clr-text: #ebe3db;
+    --clr-icon: #95000080;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 18px;
+    font-family: Athiti;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+/************
+Header
+************/
+
+.main {
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+.header {
+    padding-top: 5rem;
+    text-align: center;
+    /* background-image: linear-gradient(to bottom, var(--clr-text), #ffffffd1)50%; */
+}
+
+.logo img {
+    width: 150px;
+    transition: all 1s;
+}
+
+.logo:hover img {
+    transform: scale(1.05);
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Athiti;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 1s;
+}
+
+.logo:hover h1 {
+    color: var(--color);
+}
+
+h1::before,
+h2::before,
+h3::before,
+.main h4::before {
+    content: "\f005";
+    margin-inline: 0.5rem;
+    font-family: "Font Awesome 5 Free";
+    font-size: 0.8rem;
+    color: var(--color);
+}
+
+h1::after,
+h2::after,
+h3::after,
+.main h4::after {
+    content: "\f005";
+    margin-inline: 0.5rem;
+    font-family: "Font Awesome 5 Free";
+    font-size: 0.8rem;
+    color: var(--color);
+}
+
+/* menu de la page */
+nav ul {
+    padding-left: 0;
+    list-style: none;
+    background-color: var(--color-principale);
+}
+
+nav ul li {
+    box-shadow: 0px 2px 5px rgba(61, 61, 61, 0.3);
+    border: #4c4343 1px solid;
+}
+
+nav ul li a {
+    display: block;
+    padding-block: 1rem;
+    font-family: Athiti;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--color-second);
+    transition: 1s;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: var(--color);
+    color: var(--color-principale);
+    transform: scale(1.1);
+}
+
+nav ul li a.active {
+    background-color: var(--color-second);
+    color: var(--color-principale);
+}
+
+/*********************************
+Le main de home
+*********************************/
+
+
+
+/******************************************************
+Mise en forme du carousel et les themes
+*******************************************************/
+.carousel {
+    position: relative;
+    margin-block: 3rem;
+}
+
+.carousel img {
+    width: 100%;
+}
+
+.slick-dots li button::before {
+    font-size: 2rem;
+    color: var(--color);
+}
+
+.slick-dots li.slick-active button:before {
+    color: var(--color);
+}
+
+.slick-prev {
+    left: 1%;
+    z-index: 2;
+}
+
+.slick-next {
+    right: 1%;
+}
+
+/* Article */
+.bienvenue {
+    margin: 5rem 0;
+}
+
+.bienvenue h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Merienda;
+    font-size: 1.9rem;
+    text-align: center;
+}
+
+.bienvenue img {
+    width: 100%;
+}
+
+.bienvenue p {
+    font-size: 1.4rem;
+}
+
+h3,
+h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Merienda;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.main h4 {
+    margin-block: 1rem;
+    font-size: 1.2rem;
+}
+
+.menu-special figure {
+    margin-inline: 0;
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+    background-color: var(--color-principale);
+}
+
+.bg-img {
+    position: relative;
+    transition: 1.5s;
+}
+
+.survol {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: var(--color-principale);
+    transition: 1s;
+    opacity: 0;
+}
+
+.bg-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.border figcaption:nth-child(1) {
+    font-family: Athiti;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-block: 1rem;
+}
+
+.border figcaption:nth-child(2) {
+    padding-inline: 1rem;
+    margin-block: 0;
+    font-family: Merienda;
+    font-weight: 400;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+    border: 5px var(--clr-text) solid;
+}
+
+
+.bg-img:hover .survol {
+    background-color: rgba(76, 67, 67, .9);
+    opacity: 1;
+}
+
+.menu-special figcaption ul {
+    text-align: left;
+    padding-left: 0;
+    list-style: none;
+}
+
+.menu-special figcaption ul li {
+    padding: 0.5rem 1rem;
+    border-bottom: var(--color-second) dotted 1px;
+    font-size: 0.9rem;
+}
+
+.menu-special figcaption ul li::before {
+    content: "\f005";
+    margin-inline: 0.5rem;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 0.5em;
+    color: var(--color);
+}
+
+.menu-special figcaption a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    padding-block: 0.5rem;
+    border: transparent 2px solid;
+    box-shadow: 0px 2px 5px rgba(61, 61, 61, 0.4);
+    text-decoration: none;
+    background-color: var(--color-second);
+    color: var(--color-principale);
+    transition: 1s;
+}
+
+.menu-special figcaption a:hover,
+.menu-special figcaption a:focus {
+    background-color: var(--color);
+    transform: scale(1.03);
+}
+
+.menu-special figcaption a>img {
+    width: 2rem;
+}
+
+.footer {
+    padding-bottom: 1rem;
+    text-align: center;
+    background-color: var(--color-footer);
+}
+
+.pieds-page {
+    padding: 2rem;
+    background-image: url(../instructions/ressources/images/footer-bg.jpg);
+    background-position: center;
+    color: var(--clr-text);
+}
+
+.foot h4 {
+    padding: 1rem;
+    border-bottom: var(--clr-text) 2px dotted;
+}
+
+.pieds-page section {
+    margin-bottom: 2rem;
+}
+
+.opening p {
+    margin-block: 0.5rem;
+}
+
+address a {
+    display: block;
+    margin-top: 1em;
+    text-decoration: none;
+    color: var(--clr-text);
+}
+
+.font-icon {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.font-icon span {
+    font-size: 2rem;
+    transition: 1s;
+}
+
+.font-icon span:hover,
+.font-icon span:focus {
+    transform: scale(1.3);
+    opacity: 0.5;
+}
+
+.copyright {
+    padding: 1rem 0;
+    font-size: 1rem;
+    color: var(--clr-text);
+}
+
+.copyright img {
+    width: 50px;
+}
+
+.copyright a {
+    color: var(--clr-text);
+}
+
+/***********
+Responsive
+************/
+
+@media screen and (min-width:780px) and (max-width: 980px) {
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        box-shadow: none;
+        border: transparent;
+    }
+
+    nav ul li a {
+        padding-inline: 1.5em;
+    }
+
+    .foot {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 auto;
+    }
+
+    .pieds-page section {
+        width: 30%;
+    }
+}
+
+
+
+@media screen and (min-width: 981px) {
+
+    .header,
+    .main,
+    .foot,
+    .foote {
+        width: 80%;
+        max-width: 1400px;
+        margin-inline: auto;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        gap: 2rem;
+        background-color: transparent;
+    }
+
+    nav ul li {
+        background-color: var(--color-principale);
+        border: transparent;
+    }
+
+    nav ul li a {
+        padding-inline: 1.5em;
+        border-radius: 5px;
+
+    }
+
+    nav a:hover,
+    nav a:focus {
+        border-radius: 5px;
+    }
+
+    nav ul li a.active {
+        border-radius: 5px;
+    }
+
+    .bienvenue {
+        overflow: hidden;
+    }
+
+    .bienvenue img {
+        float: right;
+        max-width: 40%;
+        margin-left: 1.5rem;
+    }
+
+    .foot {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 1rem;
+        margin: 0 auto;
+
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .flex figure {
+        width: 33%;
+    }
+
+    .pieds-page section {
+        width: 30%;
+    }
+
+}
